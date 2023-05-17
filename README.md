@@ -38,6 +38,10 @@ This is a simple text-based game implemented in Java where the player fights aga
 - `Fireball.java`: Extends the `Skill` class and represents a fire-based skill.
 - `Waterbolt.java`: Extends the `Skill` class and represents a water-based skill.
 
+# Preview
+
+![image](https://github.com/Cranbaerry/abstraction-interface/assets/16867718/e7ff25c6-18d8-42fc-bb1c-b405db301000)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
