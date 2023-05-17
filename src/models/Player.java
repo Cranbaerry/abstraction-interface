@@ -1,6 +1,5 @@
 package models;
 import abstracts.Entity;
-import abstracts.Skill;
 
 public class Player extends Entity {
     public Player(String name) {

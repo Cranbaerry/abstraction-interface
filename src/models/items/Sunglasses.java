@@ -15,7 +15,6 @@ public class Sunglasses implements Item {
     }
     
     public void useItem(Entity user) {
-        // system out 
         System.out.println("**" + user.getName() + " puts on " + this.name + ".**");
     }
     

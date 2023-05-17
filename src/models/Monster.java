@@ -1,7 +1,6 @@
 package models;
 
 import abstracts.Entity;
-import abstracts.Skill;
 
 public class Monster extends Entity {
     public Monster(String name, int hp, int mp) {
