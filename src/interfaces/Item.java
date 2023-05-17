@@ -8,20 +8,12 @@ import abstracts.Entity;
  * The interface can't do anything. It's just a pattern.
  * 
  * Essentially, in this case, we define an entity interface that will be the "pattern" of methods a classs should have. 
+ * Later, we will implement this interface to our "Sunglasses" and "Potion" class.
  */
 
-public interface EntityInterface { 
+public interface Item { 
     String getName();
     String getType();
-    void setHP(int hp);
-    void setMP(int mp);
-    void attack(Entity target);
-    void castSpell(Entity target);
-    void takeDamage(int damage);
-    void heal(int hp);
-    void restoreMana(int mp);
-    void die();
-    int getHP();
-    int getMP();
+    void useItem(Entity entity);
 }
 

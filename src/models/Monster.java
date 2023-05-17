@@ -1,41 +1,18 @@
 package models;
 
 import abstracts.Entity;
+import abstracts.Skill;
 
 public class Monster extends Entity {
-    public Monster(String name) {
+    public Monster(String name, int hp, int mp) {
         this.setName(name);
-        this.setHP(100);
-        this.setMP(100);
+        this.setHP(hp);
+        this.setMP(mp);
     }
 
 	@Override
 	public void attack(Entity target) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void castSpell(Entity target) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void takeDamage(int damage) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void heal(int hp) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void restoreMana(int mp) {
-		// TODO Auto-generated method stub
-		
+		target.setHP(target.getHP() - 50);
+		System.out.println(this.getName() + " attacks " + target.getName() + " for 50 damage.");
 	}
 }

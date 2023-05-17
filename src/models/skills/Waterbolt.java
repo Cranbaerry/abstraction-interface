@@ -4,8 +4,8 @@ import abstracts.Entity;
 import abstracts.Skill;
 
 public class Waterbolt extends Skill {
-	public Waterbolt(String skillName, int skillDamage, int skillManaCost) {
-		this.setName(skillName);
+	public Waterbolt(int skillDamage, int skillManaCost) {
+		this.setName("Waterbolt");
 		this.setSkillDamage(skillDamage);
 		this.setSkillManaCost(skillManaCost);
 	}

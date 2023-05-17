@@ -1,6 +1,6 @@
 package models;
-import abstracts.Skill;
 import abstracts.Entity;
+import abstracts.Skill;
 
 public class Player extends Entity {
     public Player(String name) {
@@ -10,32 +10,10 @@ public class Player extends Entity {
     }
 
 	@Override
-	public void takeDamage(int damage) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void heal(int hp) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void restoreMana(int mp) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void attack(Entity target) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void castSpell(Entity target) {
-		// TODO Auto-generated method stub
-		
+		// Randomize damage between 10-20
+		int damage = (int) (Math.random() * 10) + 10;
+		target.setHP(target.getHP() - damage);
+		System.out.println(this.getName() + " attacks " + target.getName() + " for " + damage + " damage.");
 	}
 }

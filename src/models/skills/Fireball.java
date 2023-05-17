@@ -4,8 +4,8 @@ import abstracts.Entity;
 import abstracts.Skill;
 
 public class Fireball extends Skill {
-	public Fireball(String skillName, int skillDamage, int skillManaCost) {
-		this.setName(skillName);
+	public Fireball(int skillDamage, int skillManaCost) {
+		this.setName("Fireball");
 		this.setSkillDamage(skillDamage);
 		this.setSkillManaCost(skillManaCost);
 	}
