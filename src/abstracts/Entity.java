@@ -10,6 +10,9 @@ package abstracts;
  * Notice that we have an abstract method called attack.
  * This means that every class that extends this abstract class must implement these methods on their own.
  * Player and monster may have different implementation of it. It's up to the classes that extends this abstract class.
+ *
+ * Other attributes and methods are defined with implementation.
+ * Essentially, classes that extend this abstract class will have same methods implementation and attributes for the rest, except for attack.
  */
 
 public abstract class Entity  {
@@ -60,12 +63,12 @@ public abstract class Entity  {
     }
 
     public void viewStats() {
-		System.out.println(this.getName());
-		System.out.println("HP: " + this.getHP());
-		System.out.println("MP: " + this.getMP());
-	}
+	System.out.println(this.getName());
+	System.out.println("HP: " + this.getHP());
+	System.out.println("MP: " + this.getMP());
+    }
 
-	public void castSpell(Entity target, Skill skill) {
+    public void castSpell(Entity target, Skill skill) {
         skill.useSkill(this, target); 		
-	}
+     }
 }
